@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request
 
-application = app = Flask(__name__)
+main = app = Flask(__name__)
 
 @app.route("/")
 def index():

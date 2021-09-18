@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Convert Celsius to Fahrenheit</title>
+<style>
+    body {
+        background-image:url('static/images/temperature.jpg');
+        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.5)), url('static/images/temperature.jpg'); 
+        background-size:cover;
+        display: flex;
+        align-content: center;
+        height: 100vh;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px 60px;
+        font-family: Garamond, sans-serif;
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+    h1{
+        color: #004040;
+        font-size: 2em;
+        line-height: 1.6em;
+    }
+
+    div {
+        width: 600px;
+        text-align: center;         
+    }
+    .temp-input {
+        height: 35px;
+        border-radius: 5px;
+        width: 50%;
+        background-color: aliceblue;
+        border:transparent;
+    }    
+    .button{
+        height: 35px;
+        border-radius: 5px;
+        color:white;
+        background-color: #367588;
+        border: transparent;
+    }
+    .output{
+        font-size: 1.4em;
+        line-height: 1.6em;
+        font-weight: 600;
+        color: #004040;
+    }
+    </style>
+</head>
+<body >
+    <div >
+        <form action="" method="get">
+            <h1>Celsius to Fahrenheit Converter: </h1>
+            <input type="text" class="temp-input" name="celsius">
+            <input type="submit" class="button" value="Convert">
+        </form>
+        <p class="output"> Fahrenheit: {{ fahrenheit }} </p>
+    </div> 
+    
+</body>
+
+</html> 
